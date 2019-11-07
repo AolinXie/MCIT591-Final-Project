@@ -62,7 +62,7 @@ public class GraphAnalyzer {
 		
 		ArrayList<Double> weights = new ArrayList<Double>();
 		
-			for (int i = 0; i <=1; i++) {								//testing with 1
+			for (int i = 0; i < a.size(); i++) {								//testing with 1
 				for (int j = 0; j < b.size(); j++) {
 				
 				weights.add(  ( ( 1/Math.sqrt(Math.PI*h) ) * sd ) 
