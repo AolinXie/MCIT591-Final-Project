@@ -36,7 +36,7 @@ public class Runner {
 		ga.totalScores();
 		ga.discrete();
 		ga.smoothingStatistic();
-		ga.test();
+		ga.wts(ga.totalScores(),ga.discrete());
 		
 		
 		
