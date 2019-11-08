@@ -4,15 +4,17 @@ import java.util.ArrayList;
 
 public class GraphAnalyzer {
 
-	static ScoreMatrix sm = new ScoreMatrix();
-	static TestAnalysis ta = new TestAnalysis();
-	static StatisticsAnalyzer sa = new StatisticsAnalyzer();
+	public GraphAnalyzer
+	
+	ScoreMatrix sm = new ScoreMatrix();
+	TestAnalysis ta = new TestAnalysis();
+	StatisticsAnalyzer sa = new StatisticsAnalyzer();
 	
 	
-	static ArrayList<Integer> totalScores = new ArrayList<>();
-	static ArrayList<Double> discretePts = new ArrayList<>();
+	ArrayList<Integer> totalScores = new ArrayList<>();
+	ArrayList<Double> discretePts = new ArrayList<>();
 	
-	static ArrayList<Double> weights = new ArrayList<>();
+	ArrayList<Double> weights = new ArrayList<>();
 	
 
 	public static ArrayList<Double> getWeights() {
