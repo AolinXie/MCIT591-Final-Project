@@ -12,7 +12,12 @@ public class GraphAnalyzer {
 	static ArrayList<Integer> totalScores = new ArrayList<>();
 	static ArrayList<Double> discretePts = new ArrayList<>();
 	
+	static ArrayList<Double> weights = new ArrayList<>();
+	
 
+	public static ArrayList<Double> getWeights() {
+		return weights;
+	}
 
 	//Getting total scores
 	public static ArrayList<Integer> totalScores() {
@@ -74,8 +79,25 @@ public class GraphAnalyzer {
 				
 	}
 			
-			System.out.println(weights);	
+//			System.out.println(weights);	
 	return weights;
+	}
+	
+	public static ArrayList<Double> sumWts() {
+		
+		ArrayList<Double> sumWt = new ArrayList<Double>();
+		double sum = 0.0;
+		
+			for (int i = 0; i < weights.size(); i++) {	
+				if(i % 21 ==0) {
+				sum = + weights.get(i);
+				
+				sumWt.add(sum);
+				System.out.println(sum);
+				}
+	}
+			System.out.println(sumWt);	
+	return sumWt;
 	}
 	
 	
@@ -83,6 +105,10 @@ public class GraphAnalyzer {
 		return totalScores;
 	}
 
+
+	public static void setWeights(ArrayList<Double> weights) {
+		GraphAnalyzer.weights = weights;
+	}
 
 	public ArrayList<Double> getDiscretePts() {
 		return discretePts;

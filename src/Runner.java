@@ -37,7 +37,7 @@ public class Runner {
 		ga.discrete();
 		ga.smoothingStatistic();
 		ga.wts(ga.totalScores(),ga.discrete());
-		
+		ga.sumWts();
 		
 		
 		//Conduct Option Analysis
